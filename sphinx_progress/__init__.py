@@ -10,10 +10,10 @@ def copy_asset_files(app, exc):
     """ Copies required assets for formating in HTML """
 
     static_path_css = (
-        Path(__file__).parent.joinpath("assets", "css", "assessment.css").absolute()
+        Path(__file__).parent.joinpath("assets", "css", "progress.css").absolute()
     )
     static_path_js = (
-        Path(__file__).parent.joinpath("assets", "js", "assessment.js").absolute()
+        Path(__file__).parent.joinpath("assets", "js", "progress.js").absolute()
     )
     asset_files = [str(static_path_css), str(static_path_js)]
 
