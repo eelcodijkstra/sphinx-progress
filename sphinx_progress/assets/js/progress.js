@@ -123,8 +123,5 @@ document.addEventListener('DOMContentLoaded', function(event) {
   } else {
       progress_db = null;
   }
- 
-  if (typeof assessment_log !== 'undefined') { // check if variable exists
-        assessment_log = progress_log;
-  }    
+    
 });
