@@ -30,7 +30,7 @@ sphinx:
 Add *sphinx_progress* to your sphinx extensions in `conf.py`
 
 ```
-extensions = ["sphinx_assessment"]
+extensions = ["sphinx_progress"]
 ```
 
 ## Documentation
