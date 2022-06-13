@@ -75,11 +75,14 @@ function progress_init() {
     progress_context.booktitle = booktitle;
     progress_context.pagetitle = pagetitle;
     
-    const topbar = document.querySelector("div.topbar-main");
+    let topbar = document.querySelector("div.topbar-main");
+    if (topbar == null) {
+        topbar = document.querySelector("div.header-article__right");
+    }
     var elmt = document.createElement('a');
     elmt.classList.add("full-screen-button");
     elmt.innerHTML = `
-<button type="button" class="btn btn-secondary topbarbtn" 
+<button type="button" class="btn btn-secondary topbarbtn headerbtn" 
         data-toggle="tooltip" data-placement="bottom" 
         onclick="progress_login()" aria-label="Login" 
         title="" data-original-title="Login">    
